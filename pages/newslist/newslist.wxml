@@ -1,0 +1,19 @@
+
+<loading hidden="{{!loading}}">
+  加载中...
+</loading>
+<scroll-view scroll-y="true" class="page-body">
+  <navigator url="../onenews/onenews?url={{item.url}}" wx:for="{{news}}">
+    <view class="item">
+    <image class="poster" src="{{item.thumbnail_pic_s}}"></image>
+    <view class="meta">
+      <text class="title">{{item.title}}</text>
+      <text class="sub-title">{{item.realtype}}</text>
+      <view class="artists"><text>{{item.date}}</text></view>
+    </view>
+    <view class="rating">
+      <!--<text>{{item.rating.average}}</text>-->
+    </view>
+    </view>
+  </navigator>
+</scroll-view>

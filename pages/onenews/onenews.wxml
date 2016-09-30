@@ -1,0 +1,14 @@
+
+<loading hidden="{{!loading}}">
+  加载中...
+</loading>
+<scroll-view scroll-y="true">
+
+  <view class="meta">
+    <text class="title">{{title}}</text>
+  </view>
+
+  <view class="summary">
+    <text class="content">{{onenewsurl}}</text>
+  </view>
+</scroll-view>
